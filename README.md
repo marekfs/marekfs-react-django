@@ -1,5 +1,11 @@
-## How to run
+## react + django + postgres
 
-You will need to have [Docker](https://hub.docker.com/) and [Docker-Compose](https://docs.docker.com/compose/install/) installed.
+Easiest way to install and run is to use Docker. Make sure you have [Docker](https://hub.docker.com/) and [Docker-Compose](https://docs.docker.com/compose/install/) installed.
 
-Start Docker, and run `docker-compose up`.
+### WIP
+
+##### Starting
+
+`git clone https://github.com/marekfs/marekfs-react-django`
+
+In the root directory, run `docker-compose up`.
