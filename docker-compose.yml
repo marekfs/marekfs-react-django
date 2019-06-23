@@ -7,6 +7,7 @@ services:
     labels:
       com.marekfs.name: "Marek Siekierski"
       com.marekfs.email: "mark.siekierski@gmail.com"
+    image: marekfs-web
     build: .
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
@@ -17,9 +18,12 @@ services:
       - db
       - node
   node:
-    build: docker/node
+    image: marekfs-node
+    build:
+      context: ./static
+    working_dir: /home/node/app
     environment:
       - NODE_ENV=production
     volumes:
-      - ./static:/home/node/app
-    command: /usr/local/bin/startup.sh
+      - ./static/:/home/node/app/
+    command: npm run webpack
