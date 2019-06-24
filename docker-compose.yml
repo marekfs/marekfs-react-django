@@ -2,7 +2,8 @@ version: '3.7'
 
 services:
   db:
-    image: postgres:11.3
+    image: postgres:latest
+    volumes: ['~/.marekfs/postgres:/var/lib/postgresql/data']
   web:
     labels:
       com.marekfs.name: "Marek Siekierski"
