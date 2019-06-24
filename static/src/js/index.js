@@ -25,21 +25,21 @@ export const device = {
 
 // Create a Title component that'll render an <h1> tag with some styles
 const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
+  font-size: 3em;
+  text-align: left;
   color: palevioletred;
 `;
 // Create a Wrapper component that'll render a <section> tag with some styles
 const Wrapper = styled.section`
-  padding: 4em;
+  padding: 2em;
   background: papayawhip;
 `;
 // Use Title and Wrapper like any other React component – except they're styled!
 ReactDOM.render(
   <Wrapper>
     <Title>
-      Using styled components.
+      marekfs
     </Title>
   </Wrapper>,
-  document.getElementById("root")
+  document.getElementById("navbar")
 );
