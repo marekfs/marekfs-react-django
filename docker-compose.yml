@@ -9,7 +9,7 @@ services:
       com.marekfs.email: "mark.siekierski@gmail.com"
     image: marekfs-web
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command: /usr/local/bin/startup.sh
     volumes:
       - .:/app
     ports:
