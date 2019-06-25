@@ -12,3 +12,7 @@ Easiest way to install and run is to use Docker. Make sure you have [Docker](htt
 `docker-compose up`
 
 In your browser, navigate to **http://localhost:8000**.
+
+To stop the containers gracefully, you can run the following in another session:
+
+`docker-compose down`
