@@ -6,6 +6,9 @@ Easiest way to install and run is to use Docker. Make sure you have [Docker](htt
 
 ##### Starting
 
-`git clone https://github.com/marekfs/marekfs-react-django`
+`git clone https://github.com/marekfs/marekfs-react-django`  
+`cd marekfs-react-django`  
+`docker-compose run node npm install`  
+`docker-compose up`
 
-In the root directory, run `docker-compose up`.
+In your browser, navigate to **http://localhost:8000**.
