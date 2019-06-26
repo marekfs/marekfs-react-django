@@ -19,9 +19,7 @@ services:
       - db
       - node
   node:
-    image: marekfs-node
-    build:
-      context: ./static
+    image: node:10.16-stretch
     working_dir: /home/node/app
     environment:
       - NODE_ENV=development
